@@ -9,15 +9,15 @@ import (
 
 func main() {
 	dict := map[string]int{
-		"A X": 1 + 3, // piedra piedra
-		"A Y": 2 + 6, // piedra papel
-		"A Z": 3,     // piedra tijera
-		"B X": 1,     // papel piedra
-		"B Y": 2 + 3, // papel papel
-		"B Z": 3 + 6, // papel tijera
-		"C X": 1 + 6, // tijera piedra
-		"C Y": 2,     // tijera papel
-		"C Z": 3 + 3, // tijera tijera
+		"A X": 1 + 3,
+		"A Y": 2 + 6,
+		"A Z": 3,
+		"B X": 1,
+		"B Y": 2 + 3,
+		"B Z": 3 + 6,
+		"C X": 1 + 6,
+		"C Y": 2,
+		"C Z": 3 + 3,
 	}
 	dict2 := map[string]int{
 		"A X": 3,
@@ -36,7 +36,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// part 1
 	games, score1, score2 := strings.Split(string(input), "\n"), 0, 0
 	for i := range games {
 		value_part1, _ := dict[games[i]]
