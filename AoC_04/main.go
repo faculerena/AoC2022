@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+// dada una lista de la forma "a,b-c,d" verificar 1) cuantos conjuntos (a,b) esta en (c,d) o viceversa 2) cuantos (a,b) y (c,d) se intersectan
+
 func main() {
 	input, _ := os.ReadFile("input.txt")
 
