@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-var input, _ = os.ReadFile("myinput.txt")
+var input, _ = os.ReadFile("input.txt")
 var lines = strings.Split(string(input), "\n")
 var saved = -1
 var sol1 = 0
